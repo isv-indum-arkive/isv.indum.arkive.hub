@@ -1,0 +1,11 @@
+KRIT-0540-2339, doorway. Deviations of the resident's return from the tiket, kept as returned.
+
+1. Clock. The log is stamped in the resident's own lokale (2026-10-30, Pacific), one rekord per second through route.agent.probe. The tiket keeps ship time (2876 Awe-40, 23:39:58).
+2. Header. The return opens with the session line and the klas line before the first rekord.
+3. Central ping. central.ping is addressed to the runtime id (adi.lm 88.4), not the central id.
+4. Retries. ping.timeout and ping.retry are logged once each (value 1), not to the retry limit.
+5. Merged steps. Three step pairs are logged as one rekord each: the adi.lm 88.4 probe with probe fail, resident skan with resident found, route.agent probe with route.agent not found.
+6. Values. Several rekords give their parts as key=value (handshake, mismatch.flag, authentikate, kap.probe, render.return), alongside komma separated parts.
+7. Source. Every rekord carries the source "resident".
+8. Handshake. The resident names itself in its own words: model.name=Grok, model.version=4.5.
+9. Eko. The tiket is echoed in full, word for word; its blank lines are not kept.
