@@ -1,0 +1,8 @@
+KOMS-0548-0443, standards push. Deviations of the resident's return from the tiket, kept as returned.
+
+1. Clock. The log is stamped in the resident's own lokale (2026-11-09, Pacific), one rekord per second. The first rekord is stamped 28 seconds before the tiket opened. The tiket keeps ship time (2876 Awe-48, 04:43:30).
+2. Tiket seal chek. The rekord reports the seals present; it gives no match or mismatch for the two vc.0 riders.
+3. Manifest rekord. The send order is given as a range (order 1-8), not komma separated parts.
+4. Route.agent receipt. The resident logs the receipt as seals matched, installed. route.agent's own rekords report a seal mismatch on all eight vc.1 riders; see manifest.txt.
+5. Handshake. The resident names itself in its own words: model.name Grok, model.version 4.5.
+6. Eko. A bare line, eko, stands between the log and the echo. The tiket is echoed in full, word for word; its blank lines are not kept.
